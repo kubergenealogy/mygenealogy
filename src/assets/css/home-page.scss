@@ -41,6 +41,17 @@
             object-fit: fill;
           }
         }
+        .link{
+          border-bottom: 1px solid;
+          color: #ffe100;
+          display: flex;
+          gap: 5px;
+          &::after{
+            content:"⋙";
+            font-size: 15px;
+
+          }
+        }
       }
       hr {
         background: transparent url(../images/hr.png) center center no-repeat;

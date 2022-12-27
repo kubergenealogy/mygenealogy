@@ -7,13 +7,18 @@ const SliderImage = ({ persons }) => {
   const [current, setcurrent] = useState(0);
   const len = persons.length;
 
+  const randomPerson =()=>{
+    setcurrent(Math.floor(Math.random() * len));
+    clearInterval(timerInterval)
+  }
+  
   const nextPerson = () => {
-    // clearInterval(timerInterval)
+    clearInterval(timerInterval)
     setcurrent(current === len - 1 ? 0 : current + 1);
   };
-  // const timerInterval = setInterval(nextPerson,5000);
+  const timerInterval = setInterval(randomPerson,5000);
   const prevPerson = () => {
-    // clearInterval(timerInterval)
+    clearInterval(timerInterval)
     setcurrent(current === 0 ? len - 1 : current - 1);
   };
 

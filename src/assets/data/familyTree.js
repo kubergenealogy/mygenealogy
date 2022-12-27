@@ -12,6 +12,66 @@ export const FamilyTree = [
                         url: 'user.png',
                         children:[
                             {
+                                name:'Mulchand',
+                                url:'user.png',
+                                children:[
+                                    {
+                                        name:'Chintamani',
+                                        url:'user.png',
+                                        children:[
+                                            {
+                                                name:'Sachin',
+                                                url:'user.png',   
+                                            },
+                                            {
+                                                name:'Sunil',
+                                                url:'user.png',   
+                                            },
+                                            {
+                                                name:'Anil',
+                                                url:'user.png',   
+                                            },
+                                            {
+                                                name:'Avanish',
+                                                url:'user.png',   
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        name:'Rajmani',
+                                        url:'user.png',
+                                        children:[
+                                            {
+                                                name:'Pankaj',
+                                                url:'user.png',   
+                                            },
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                name:'Phulchand',
+                                url:'user.png',
+                                children:[
+                                    {
+                                        name:'Lala',
+                                        url:'user.png',
+                                        children:[
+                                            {
+                                                name:'Rishabh',
+                                                url:'user.png'
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                        ]
+                    },
+                    {
+                        name: 'Chaitu  ',
+                        url: 'user.png',
+                        children:[
+                            {
                                 name:'Shivcharan',
                                 url:'user.png',
                                 children:[
@@ -57,56 +117,6 @@ export const FamilyTree = [
                                         name:'Jay Prakash',
                                         url:'user.png',
                                     },
-                                ]
-                            },
-                        ]
-                    },
-                    {
-                        name: 'Chaitu  ',
-                        url: 'user.png',
-                        children:[
-                            {
-                                name:'Mulchand',
-                                url:'user.png',
-                                children:[
-                                    {
-                                        name:'Chintamani',
-                                        url:'user.png',
-                                        children:[
-                                            {
-                                                name:'Sachin',
-                                                url:'user.png',   
-                                            },
-                                            {
-                                                name:'Sunil',
-                                                url:'user.png',   
-                                            },
-                                            {
-                                                name:'Anil',
-                                                url:'user.png',   
-                                            },
-                                            {
-                                                name:'Avanish',
-                                                url:'user.png',   
-                                            },
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                name:'Phulchand',
-                                url:'user.png',
-                                children:[
-                                    {
-                                        name:'Lala',
-                                        url:'user.png',
-                                        children:[
-                                            {
-                                                name:'Rishabh',
-                                                url:'user.png'
-                                            }
-                                        ]
-                                    }
                                 ]
                             },
                         ]

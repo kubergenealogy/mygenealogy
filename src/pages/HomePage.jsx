@@ -26,6 +26,7 @@ const HomePage = () => {
                             <img src={IntroPng} alt="" />
                         </div>
                         <div className="title">Thanks for visiting!</div>
+                        <Link className='link' to='/tribute'>Tribute</Link>
                     </div>
                     <hr />
                     <div className="subtitle2">

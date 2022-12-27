@@ -7,6 +7,11 @@
   left: 0;
   top: 0;
   z-index: 100;
+  &.fixed{
+    background: #000;
+    padding: 0 0 15px;
+    position: fixed;
+  }
   .title{
     display: flex;
     justify-content: center;
