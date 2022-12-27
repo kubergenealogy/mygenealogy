@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/mygenealogy/static/css/main.6b333fb7.css",
+    "main.js": "/mygenealogy/static/js/main.7958f2d4.js",
+    "static/media/paper.png": "/mygenealogy/static/media/paper.0746241a0176d8ee0c3d.png",
+    "static/media/moon.png": "/mygenealogy/static/media/moon.ab63d5ce7b37b057eeff.png",
+    "static/media/frame.png": "/mygenealogy/static/media/frame.6d779b7c1f4ce08c6702.png",
+    "static/media/tree.png": "/mygenealogy/static/media/tree.5f85a8d8a924c876a38d.png",
+    "static/media/umashankar.jpg": "/mygenealogy/static/media/umashankar.486dd874f18cdaa957cb.jpg",
+    "static/media/reyansh.jpeg": "/mygenealogy/static/media/reyansh.65336b24999336eaa7d7.jpeg",
+    "static/media/intro1.jpeg": "/mygenealogy/static/media/intro1.273d9039c76793a629d5.jpeg",
+    "static/media/candle.png": "/mygenealogy/static/media/candle.91b4e61fff8b759f9b2b.png",
+    "static/media/intro3.jpeg": "/mygenealogy/static/media/intro3.7cbad6cdb98c2c0174fe.jpeg",
+    "static/media/ramjeet.jpeg": "/mygenealogy/static/media/ramjeet.c33b1e1a023355c82874.jpeg",
+    "static/media/atharv.jpeg": "/mygenealogy/static/media/atharv.65fa0501c5f482e58d02.jpeg",
+    "static/media/rajesh.jpeg": "/mygenealogy/static/media/rajesh.a432b6b19da05a044cfd.jpeg",
+    "static/media/intro2.jpeg": "/mygenealogy/static/media/intro2.8d15e057098c0f9787aa.jpeg",
+    "static/media/amarjeet.jpeg": "/mygenealogy/static/media/amarjeet.77834208b2e46dd6224d.jpeg",
+    "static/media/dinesh.jpeg": "/mygenealogy/static/media/dinesh.c1504b34c2d578f34099.jpeg",
+    "static/media/shabhjeet.jpeg": "/mygenealogy/static/media/shabhjeet.0cc3cc76352972cea53e.jpeg",
+    "static/media/ritesh.jpeg": "/mygenealogy/static/media/ritesh.6c54e65e13bf86d928ce.jpeg",
+    "static/media/dhanesh.jpeg": "/mygenealogy/static/media/dhanesh.e82f46c45b832fa02e06.jpeg",
+    "static/media/krishna.jpg": "/mygenealogy/static/media/krishna.41845aaac95bbd529a4e.jpg",
+    "static/media/profile.jpeg": "/mygenealogy/static/media/profile.ed4e465345d73d9cd89f.jpeg",
+    "static/media/deepak.jpeg": "/mygenealogy/static/media/deepak.d8bc5be15071db85a8ec.jpeg",
+    "index.html": "/mygenealogy/index.html",
+    "main.6b333fb7.css.map": "/mygenealogy/static/css/main.6b333fb7.css.map",
+    "main.7958f2d4.js.map": "/mygenealogy/static/js/main.7958f2d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b333fb7.css",
+    "static/js/main.7958f2d4.js"
+  ]
+}
