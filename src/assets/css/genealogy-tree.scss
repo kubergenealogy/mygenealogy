@@ -1,0 +1,118 @@
+.family-tree {
+  display: grid;
+  align-items: center;
+  .tree {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    .parent-child-container{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: 0.5s;
+        margin: auto;
+        overflow: hidden;
+        span{
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            font-size: 8px;
+            background: linear-gradient(0deg, black, transparent);
+            width: 100%;
+            height: 56%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            font-weight: 600;
+        }
+      }
+    ul {
+      padding-top: 20px;
+      position: relative;
+      transition: 0.5s;
+      ul{
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 0;
+            border-left: 1px solid #ccc;
+            height: 20px;
+        }
+      }
+    }
+    //hover section
+    li{
+        .parent-child-container{
+            &:hover{
+                box-shadow: 0 0 8px 5px #00fafa;
+            }
+
+        }
+        .parent-child-container:hover+ul{
+            >li{
+                
+                
+                >.parent-child-container{
+                    box-shadow: 0 0 8px 5px #00fafa;
+                }
+            }
+        }
+    }
+
+
+    li {
+      display: inline-table;
+      text-align: center;
+      list-style: none;
+      position: relative;
+      padding: 10px;
+      transition: 0.5s;
+      &::after{
+        right: auto;
+        left: 50%;
+        border-left: 1px solid #ccc;
+      }
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 50%;
+        border-top: 1px solid #ccc;
+        width: 51%;
+        height: 10px;
+      }
+      &:only-of-type::after,&:only-of-type::before{
+        display: none;
+      }
+      &:only-of-type{
+        padding-top: 0;
+      }
+      &:first-child::before,&:last-child::after{
+        border: none;
+      }
+      &:last-child::before{
+        border-right: 1px solid #ccc;
+        border-radius: 0 5px 0 0;
+      }
+      &:first-child::after{
+        border-radius: 5px 0 0 0;
+      }
+    }
+    
+  }
+}
+
+@media screen and (max-width:1024px) {
+    .parent-child-container{
+        width: 50px;
+        height: 50px;
+        span{
+            font-size: 8px !important;
+        }
+    }
+}

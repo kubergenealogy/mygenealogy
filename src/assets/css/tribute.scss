@@ -1,0 +1,51 @@
+.tribute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tribute-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        .title{
+            font-size: 17px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .candles{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5rem;
+            transform: translateY(-225px);
+            margin: 0 -25px;
+            img{
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .candles{
+        gap: 3rem !important;
+        transform: translateY(-160px) !important;
+        img{
+            height: 100px !important;
+        }
+    }
+    .tribute-container{
+        .title{
+            font-size: 14px !important;
+            font-weight: 500 !important;
+        }
+    }
+}
