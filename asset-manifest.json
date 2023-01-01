@@ -1,9 +1,7 @@
 {
   "files": {
-    "main.css": "/mygenealogy/static/css/main.b0eacd92.css",
-    "main.js": "/mygenealogy/static/js/main.162f5122.js",
-    "static/media/paper.png": "/mygenealogy/static/media/paper.0746241a0176d8ee0c3d.png",
-    "static/media/moon.png": "/mygenealogy/static/media/moon.ab63d5ce7b37b057eeff.png",
+    "main.css": "/mygenealogy/static/css/main.1a71261e.css",
+    "main.js": "/mygenealogy/static/js/main.1c8344e5.js",
     "static/media/frame.png": "/mygenealogy/static/media/frame.6d779b7c1f4ce08c6702.png",
     "static/media/tree.png": "/mygenealogy/static/media/tree.5f85a8d8a924c876a38d.png",
     "static/media/umashankar.jpg": "/mygenealogy/static/media/umashankar.486dd874f18cdaa957cb.jpg",
@@ -25,11 +23,11 @@
     "static/media/deepak.jpeg": "/mygenealogy/static/media/deepak.d8bc5be15071db85a8ec.jpeg",
     "static/media/isaravati.jpeg": "/mygenealogy/static/media/isaravati.59ad0a3093752c7b4d30.jpeg",
     "index.html": "/mygenealogy/index.html",
-    "main.b0eacd92.css.map": "/mygenealogy/static/css/main.b0eacd92.css.map",
-    "main.162f5122.js.map": "/mygenealogy/static/js/main.162f5122.js.map"
+    "main.1a71261e.css.map": "/mygenealogy/static/css/main.1a71261e.css.map",
+    "main.1c8344e5.js.map": "/mygenealogy/static/js/main.1c8344e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0eacd92.css",
-    "static/js/main.162f5122.js"
+    "static/css/main.1a71261e.css",
+    "static/js/main.1c8344e5.js"
   ]
 }
