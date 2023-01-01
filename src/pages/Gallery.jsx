@@ -1,14 +1,15 @@
 import React from 'react'
 import '../assets/css/gallery.scss'
 import { ImageData } from '../assets/data/IntroImages'
-import Navigation from '../components/Navigation';
+import Header from '../components/Header';
+
 
 const Gallery = () => {
     return (
         <div className="gallery-page page">
-            <Navigation />
+            <Header />
             <div className="gallery">
-                <div className="title">Memories</div>
+                <div className="page-title">Memories <span></span></div>
                 <div className="images">
                     {
                         ImageData.map((item) => {

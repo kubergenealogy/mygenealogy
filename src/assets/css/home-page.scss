@@ -1,3 +1,5 @@
+@import 'variables';
+
 .home {
   display: flex;
   flex-direction: column;
@@ -22,28 +24,50 @@
         flex-direction: column;
         align-items: center;
         line-height: 1.4em;
-        color: #fff;
-        border: 3px #f2f2f2 solid;
-        box-shadow: 0 5px 15px -4px rgb(0 0 0 / 40%);
+        color: $text;
         overflow: hidden;
         gap: 15px;
         padding: 15px;
         border-radius: 50px 0 50px 50px;
+        .subtitle{
+          text-align: center;
+        }
         .image {
           width: 100px;
           height: 100px;
           border-radius: 50%;
-          border: 3px solid #f2f2f2;
-          overflow: hidden;
+          border: 3px solid $border;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           img {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             object-fit: fill;
+            border-radius: 50%;
           }
+          span{
+            position: absolute;
+            width: 85%;
+            height: 85%;
+            background: $link;
+            z-index: 0;
+            box-shadow: 0 0 30px  5px $link;
+            animation: rotate1 3s linear infinite;
+          }
+          .chakra1{
+              transform: rotate(0);
+              animation: rotate2 3s linear infinite;
+          }
+
         }
         .link{
           border-bottom: 1px solid;
-          color: #ffe100;
+          color: $link;
           display: flex;
           gap: 5px;
           &::after{
@@ -55,7 +79,6 @@
       }
       hr {
         background: transparent url(../images/hr.png) center center no-repeat;
-        color: #eee;
         border: none;
         height: 40px;
         width: 100%;
@@ -66,5 +89,23 @@
         justify-content: space-between;
       }
     }
+  }
+}
+
+
+@keyframes rotate1 {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(359deg);
+  }
+}
+@keyframes rotate2 {
+  0%{
+    transform: rotate(90deg);
+  }
+  100%{
+    transform: rotate(450deg);
   }
 }

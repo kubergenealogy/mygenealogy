@@ -3,12 +3,12 @@ import '../assets/css/tribute.scss'
 import SliderImage from '../components/SliderImage'
 import candle from '../assets/images/candle.png'
 import { deathData } from "../assets/data/deathData";
-import Navigation from '../components/Navigation';
+import Header from '../components/Header';
 
 const Tribute = () => {
   return (
     <div className="tribute">
-      <Navigation/>
+      <Header/>
       <div className="tribute-container">
         <div className="title">Heartfelt tributes to those we have lost so far.</div>
         <SliderImage persons={deathData} />

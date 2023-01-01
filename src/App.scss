@@ -1,18 +1,50 @@
+@import './assets/css/variables.scss';
+
 .app {
   padding: 100px 25px;
   margin: auto;
-  background: rgb(13, 128, 148);
+  background: $primary;
   position: relative;
   min-height: 100vh;
   overflow: hidden;
 }
 
-.title {
+.page-title{
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: fit-content;
+  span{
+    $height: 5px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: $height;
+    background: rgba($secondary,0.3);
+    border-radius: 99999px;
+    &::after{
+      position: absolute;
+      content: "";
+      width: $height;
+      height: 100%;
+      background: $secondary;
+      border-radius: 50%;
+      box-shadow: 0 0 10px 2px $secondary;
+      animation: slider 3s linear infinite;
+    }
+  }
+}
+
+.title,.page-title {
   font: 22px "Gabriela", Verdana, Helvetica, sans-serif;
-  color: #fff;
+  color: $text;
   text-align: center;
   padding: 5px 0;
 }
+
+
 .subtitle {
   font-family: "Open Sans", Verdana, Helvetica, sans-serif;
   font-size: 18px;
@@ -40,7 +72,7 @@ img {
     width: 100%;
     span {
       font-size: 15px;
-      color: #ffe83c;
+      color: $link;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -63,7 +95,7 @@ img {
       max-width: 250px;
       height: 100px;
       border: 3px #f2f2f2 solid;
-      box-shadow: 0 5px 15px -4px rgb(0 0 0 / 40%);
+      box-shadow: 0 5px 15px -4px $boxShadow;
     }
   }
 }
@@ -77,5 +109,17 @@ img {
 @media screen and (max-width:350px) {
   .title{
     font-size: 15px;
+  }
+}
+
+@keyframes slider {
+  0%{
+    left: 0;
+  }
+  50%{
+    left: 100%;
+  }
+  100%{
+    left: 0;
   }
 }

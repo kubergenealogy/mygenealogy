@@ -1,6 +1,45 @@
+@import './variables.scss';
 .family-tree {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   align-items: center;
+  .color-ins{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      &:nth-child(1){
+        span{
+          background: $parent;
+          box-shadow: 0 0 10px 2px $parent;
+        } 
+      }
+      &:nth-child(2){
+        span{
+          background: $child;
+          box-shadow: 0 0 10px 2px $child;
+        } 
+      }
+      &:nth-child(3){
+        span{
+          background: $grand-child;
+          box-shadow: 0 0 10px 2px $grand-child;
+        } 
+      }
+    }
+    span{
+      width: 10px;
+      height: 10px;
+
+      display: flex;
+    }
+  }
   .tree {
     width: 100%;
     height: auto;
@@ -9,17 +48,17 @@
         width: 50px;
         height: 50px;
         position: relative;
-        border: 1px solid #ccc;
+        border: 1px solid $secondary;
         border-radius: 5px;
         transition: 0.5s;
         margin: auto;
         overflow: hidden;
         span{
-            color: #fff;
+            color: $text;
             position: absolute;
             bottom: 0;
             font-size: 8px;
-            background: linear-gradient(0deg, black, transparent);
+            background: linear-gradient(0deg, $tertiary, transparent);
             width: 100%;
             height: 56%;
             display: flex;
@@ -39,7 +78,7 @@
             top: 0;
             left: 50%;
             width: 0;
-            border-left: 1px solid #ccc;
+            border-left: 1px solid $secondary;
             height: 20px;
         }
       }
@@ -48,16 +87,21 @@
     li{
         .parent-child-container{
             &:hover{
-                box-shadow: 0 0 8px 5px #ff4b4b;
+                box-shadow: 0 0 8px 5px $parent;
             }
 
         }
         .parent-child-container:hover+ul{
+          li{
+              .parent-child-container{
+                  box-shadow: 0 0 8px 5px $grand-child;
+              }
+          }
+      }
+        .parent-child-container:hover+ul{
             >li{
-                
-                
                 >.parent-child-container{
-                    box-shadow: 0 0 8px 5px #00fafa;
+                    box-shadow: 0 0 8px 5px $child;
                 }
             }
         }
@@ -74,7 +118,7 @@
       &::after{
         right: auto;
         left: 50%;
-        border-left: 1px solid #ccc;
+        border-left: 1px solid $secondary;
       }
       &::before,
       &::after {
@@ -82,7 +126,7 @@
         position: absolute;
         top: 0;
         right: 50%;
-        border-top: 1px solid #ccc;
+        border-top: 1px solid $secondary;
         width: 51%;
         height: 10px;
       }
@@ -96,7 +140,7 @@
         border: none;
       }
       &:last-child::before{
-        border-right: 1px solid #ccc;
+        border-right: 1px solid $secondary;
         border-radius: 0 5px 0 0;
       }
       &:first-child::after{
