@@ -56,12 +56,11 @@
             height: 85%;
             background: $link;
             z-index: 0;
-            box-shadow: 0 0 30px  5px $link;
-            animation: rotate1 3s linear infinite;
+            box-shadow: 0 0 20px 3px $link;
+            animation: rotate 3s linear infinite;
           }
           .chakra1{
-              transform: rotate(0);
-              animation: rotate2 3s linear infinite;
+              animation-delay: -399ms;                                                                                                                                                                  
           }
 
         }
@@ -93,7 +92,7 @@
 }
 
 
-@keyframes rotate1 {
+@keyframes rotate {
   0%{
     transform: rotate(0deg);
   }
@@ -101,11 +100,17 @@
     transform: rotate(359deg);
   }
 }
-@keyframes rotate2 {
-  0%{
-    transform: rotate(90deg);
-  }
-  100%{
-    transform: rotate(450deg);
+
+@media screen and (max-width:768px) {
+  .home{
+    .gallery{
+      .images{
+        justify-content: flex-start;
+        .image{
+          max-width: 210px;
+          height: 121px;
+        }
+      }
+    }
   }
 }

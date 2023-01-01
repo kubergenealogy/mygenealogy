@@ -14,6 +14,10 @@
       align-items: center;
       gap: 10px;
       font-size: 15px;
+      span{
+        border-radius: 50%;
+      }
+
       &:nth-child(1){
         span{
           background: $parent;

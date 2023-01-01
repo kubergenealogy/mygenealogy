@@ -44,10 +44,10 @@ const Header = () => {
                         <NavLink to='/' className="item">Home</NavLink>
                         <NavLink to='/gallery' className="item">Gallery</NavLink>
                         <NavLink to='/familytree' className="item">Family Tree</NavLink>
-                        <NavLink to='/contact' className="item">contact</NavLink>
+                        <NavLink to='/members' className="item">Members</NavLink>
                         <NavLink to='/about' className="item">About</NavLink>
                     </div>
-                    <div className="header-btn btn"><span>Add Member</span></div>
+                    <div onClick={() => window.open( 'https://forms.gle/bypLKT6ibPTsUcf16')}  className="header-btn btn"><span>Add Member</span></div>
 
                 </div>
             </div>
@@ -58,7 +58,7 @@ const Header = () => {
                 <NavLink to='/contact' className="item">contact</NavLink>
                 <NavLink to='/about' className="item">About</NavLink>
             </div>
-            <div className="header-btn btn"><span>Add Member</span></div>
+            <div onClick={() => window.open( 'https://forms.gle/bypLKT6ibPTsUcf16')}  className="header-btn btn"><span>Add Member</span></div>
         </div>
     )
 }

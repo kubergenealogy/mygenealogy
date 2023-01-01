@@ -20,7 +20,7 @@ const HomePage = () => {
             <div className="main">
                 <div className="intro">
                     <div className="Welcome-card">
-                        <div className="title">Welcome to Our Site</div>
+                        <div className="title">Welcome to Genealogy of Kuber Yadav</div>
                         <div className="subtitle">We hope you find everything you are looking for and many things you haven't thought of yet!</div>
                         <div className="image">
                             <span className="chakra1"></span>
@@ -31,7 +31,7 @@ const HomePage = () => {
                         <Link className='link' to='/tribute'>Tribute</Link>
                     </div>
                     <hr />
-                    <div className="subtitle2">
+                    <div className="subtitle">
                         <strong>Y</strong>ou could find an infamous relative. Or perhaps a photo of your great-grandma as a little girl. But whatever you find, it’s sure to change the whole way you look at your family history, and yourself... <br />
                         After all, the story of your family is the story of you.
                         <div className="quote">

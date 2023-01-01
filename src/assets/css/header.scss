@@ -13,7 +13,7 @@
   &.fixed{
     backdrop-filter: blur(8px);
     background:rgba($primary, 0.5);
-    border-bottom: 1px solid rgba($text , 0.34);
+    border-bottom: 1px solid rgba($secondary , 0.34);
     position: fixed;
     animation: slideDown 1s ease-in-out !important;
   }
