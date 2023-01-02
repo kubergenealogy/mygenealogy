@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../assets/css/gallery.scss'
 import { ImageData } from '../assets/data/IntroImages'
 import { LandScapeImages } from '../assets/data/LandScapeImages'
@@ -8,6 +8,10 @@ import Header from '../components/Header';
 const Gallery = () => {
     const [current, setcurrent] = useState(0);
     const len = LandScapeImages.length
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+      },[])
 
     const randomImg =()=>{
 

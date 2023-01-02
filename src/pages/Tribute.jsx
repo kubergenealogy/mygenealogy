@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../assets/css/tribute.scss'
 import SliderImage from '../components/SliderImage'
 import candle from '../assets/images/candle.png'
@@ -6,6 +6,9 @@ import { deathData } from "../assets/data/deathData";
 import Header from '../components/Header';
 
 const Tribute = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  },[])
   return (
     <div className="tribute">
       <Header/>

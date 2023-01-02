@@ -1,0 +1,26 @@
+.person-details{
+    .details{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .title{
+            text-align: left;
+            border-bottom: 1px solid;
+        }
+        .image-container{
+            width: 150px;
+            aspect-ratio: 2/3;
+            float: right;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            overflow: hidden;
+            background: rebeccapurple;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .story{
+            font-size: 17px;
+        }
+    }
+}

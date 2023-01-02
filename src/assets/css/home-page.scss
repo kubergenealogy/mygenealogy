@@ -83,10 +83,49 @@
         width: 100%;
       }
     }
-    .gallery{
+
+    .members-container{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      justify-content: center;
+      height: fit-content;
+      padding: 1rem 0;
+      .card-container{
+        display: flex;
+        gap: 0.5rem;
+        overflow: scroll;
+        position: relative;
+        left: -20px;
+        width: 110%;
+        padding: 1rem;
+        &::-webkit-scrollbar{
+          display: none;
+        }
+      }
+    }
+
+    .gallery, .members-container{
       .title{
         justify-content: space-between;
+        span {
+          font-size: 15px;
+          color: $link;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          &::after {
+            content: "»";
+            padding-left: 5px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
       }
+      
     }
   }
 }
