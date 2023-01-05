@@ -8,6 +8,7 @@ import GenealogyTree from './pages/GenealogyTree'
 import HomePage from './pages/HomePage'
 import Tribute from './pages/Tribute'
 import PersonDetail from './pages/PersonDetail'
+import Login from './pages/Login'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/members' element={<Members/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/person-details' element={<PersonDetail/>}/>
+        <Route path='/login' element={<Login/>}/>
       </Routes>
     </div>
   )
